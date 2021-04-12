@@ -38,11 +38,12 @@ Send <code>!help</code> anywhere in your chats to learn the basic spam syntax.
 
 ### Credits :
 - [Whatsapp Web JS](https://github.com/pedroslopez/whatsapp-web.js/ "Whatsapp Web JS") - This project is fully dependent on this library
-- [Whatsbot](https://github.com/TheWhatsBot/WhatsBot/ "Whatsbot") - This project has referenced the repo for configuring Heroku
+- [Whatsbot](https://github.com/TheWhatsBot/WhatsBot/ "Whatsbot") - This project has referenced the repo for configuring Heroku and keep alive mechanism.
 
 ### License & Copyright :
 - This Project is [Apache-2.0](https://github.com/TheWhatsBot/WhatsBot/blob/main/LICENSE) Licensed
 - Copyright 2021 by [Avishek Sen](https://github.com/x0rzavi)
+- Copyright 2021 by [Tuhin Kanti Pal](https://github.com/cachecleanerjeet)
 
 ### Contact :
 - [Telegram](https://telegram.dog/mishizu)
