@@ -32,11 +32,11 @@ client.on('message_create', msg => {
             msg.delete(true)
             if (data[1] == 1) {
                 for (i = 0; i < data[2]; i++) {
-                    setTimeout(function () { client.sendMessage(msg.to, data[3].toString()) }, 100 * i);
+                    setTimeout(function () { client.sendMessage(msg.to, data[3].toString()) }, 500 * i);
                 }
             } else if (data[1] == 2) {
                 for (i = 0; i < data[2]; i++) {
-                    client.sendMessage(msg.to, Math.floor((Math.random() * data[3]) + 1).toString())
+                    setTimeout(function () { client.sendMessage(msg.to, Math.floor((Math.random() * data[3]) + 1).toString()) }, 500 * i);
                 }
             } else if (data[1] == 3) {
                 for (i = 0; i < data[2]; i++) {
