@@ -48,7 +48,7 @@ client.on('disconnected', (reason) => {
 });
 
 app.get('/', (req, res) => {
-    res.send('<h1>This server is powered by <br><a href="https://github.com/x0rzavi/whatsapp-spammer">whatsapp-spammer</a></h1>')
+    res.send('<h1 align="center"><tt>This server is powered by <a href="https://github.com/x0rzavi/whatsapp-spammer">whatsapp-spammer</a><br>By <a href="https://github.com/x0rzavi">X0rzAvi</a></tt></h1>')
 })
 
 app.listen(process.env.PORT || 8080, () => {
