@@ -4,8 +4,8 @@
 <code>Since this project interacts via WhatsApp Web so there is a bare minimum 
 chance of getting banned by WhatsApp. Yet again I hereby declare that I shall 
 NOT be held responsible if your account gets banned. After all we are talking 
-about spamming here and using automation bots is against WhatsApp's policies. 
-I highly you recommended you NOT to spam numbers which are not in your contact 
+about spamming here and using automation bots is strictly against WhatsApp's policies. 
+So, I highly recommended you NOT to spam numbers which aren't in your contact 
 list and apply a little amount of brain by not spamming when your friend is pissed already.</code><br>
 
 ### Requirements :
