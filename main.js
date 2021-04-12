@@ -5,6 +5,16 @@ const config = require('./config')
 
 const client = new Client({ puppeteer: { headless: true, args: ['--no-sandbox'] }, session: config.session });
 
+function makeid(length) {
+    var result           = [];
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+      result.push(characters.charAt(Math.floor(Math.random() * charactersLength)));
+   }
+   return result.join('');
+}
+
 client.initialize();
 
 client.on('auth_failure', msg => {
@@ -19,15 +29,12 @@ client.on('message_create', msg => {
     if (msg.fromMe) {
         if (msg.body.startsWith("!spam")) {
             var data = msg.body.split(" ")
-            //console.log(data)
             msg.delete(true)
-            console.time('Spammed in')
             for (i = 0; i < data[1]; i++) {
                 //setTimeout(function () { client.sendMessage(msg.to, data[2]) }, 1000 * i);
                 //client.sendMessage(msg.to, Math.floor((Math.random() * 10000) + 1).toString())
-                client.sendMessage(msg.to, makeid(12))
+                setTimeout(function () { client.sendMessage(msg.to, makeid(12)) }, 500 * i);
             }
-            console.timeEnd('Spammed in')
             console.log("Spammed" , data[1], "times successfully")
             client.sendMessage(msg.to, "Spammed " + data[1] + " times successfully")
         } else if (msg.body == '!help') {
