@@ -18,7 +18,7 @@
 - Copy the entire JSON string generated and paste it in the ```SESSION``` field in heroku.
 - Give your app a name, choose a region and then Deploy.
 - Wait for a few minutes for the process to complete.
-- The spammer is now running and listening for your commands.
+- The spammer is now running and listening for your commands.<br>
 
 ### Additional notes and steps:
 - This app will need a cron job to keep it alive, so follow these steps.
@@ -27,23 +27,23 @@
 - Give your heroku app url (the url which opens when you click *Open app* in heroku dashboard).
 - Schedule it to every 15 minutes.
 - Everything else will be the default.
-- Click *Create Cronjob* to create a cron job.
+- Click *Create Cronjob* to create a cron job.<br>
 
 ### Commands :
-Send <code>!help</code> anywhere in your chats to learn the basic spam syntax.
+Send <code>!help</code> anywhere in your chats to learn the basic spam syntax.<br>
 
 ### How it works :
 - Opens headless WhatsApp Web session in server using puppeteer.
-- Listen to your commands and take action.
+- Listen to your commands and take action.<br>
 
 ### Credits :
 - [Whatsapp Web JS](https://github.com/pedroslopez/whatsapp-web.js/ "Whatsapp Web JS") - This project is fully dependent on this library
-- [Whatsbot](https://github.com/TheWhatsBot/WhatsBot/ "Whatsbot") - This project has referenced the repo for configuring Heroku and keep alive mechanism.
+- [Whatsbot](https://github.com/TheWhatsBot/WhatsBot/ "Whatsbot") - This project has referenced the repo for configuring Heroku and keep alive mechanism.<br>
 
 ### License & Copyright :
 - This Project is [Apache-2.0](https://github.com/TheWhatsBot/WhatsBot/blob/main/LICENSE) Licensed
 - Copyright 2021 by [Avishek Sen](https://github.com/x0rzavi)
-- Copyright 2021 by [Tuhin Kanti Pal](https://github.com/cachecleanerjeet)
+- Copyright 2021 by [Tuhin Kanti Pal](https://github.com/cachecleanerjeet)<br>
 
 ### Contact :
 - [Telegram](https://telegram.dog/mishizu)
