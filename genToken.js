@@ -15,12 +15,12 @@ client.on('authenticated', (session) => {
     fs.readFile(__dirname + '/session.json', { encoding: 'utf8' }, function(err, data) {
         if (err) {
             fs.writeFileSync(__dirname + '/session.json', JSON.stringify(session))
-            console.log("\n\nToken also saved on a file named session.json in this directory. Please delete this file after copy if you will use enviroment variable.")
+            console.log("\n\nToken also saved on a file named session.json in this directory.")
             process.exit()
         } else {
             fs.unlinkSync(__dirname + '/session.json')
             fs.writeFileSync(__dirname + '/session.json', JSON.stringify(session))
-            console.log("\n\nToken also saved on a file named session.json in this directory. Please delete this file after copy if you will use enviroment variable.")
+            console.log("\n\nToken also saved on a file named session.json in this directory.")
             process.exit()
         }
     })
