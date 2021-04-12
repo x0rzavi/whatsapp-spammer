@@ -30,15 +30,26 @@ client.on('message_create', msg => {
         if (msg.body.startsWith("!spam")) {
             var data = msg.body.split(" ")
             msg.delete(true)
-            for (i = 0; i < data[1]; i++) {
-                //setTimeout(function () { client.sendMessage(msg.to, data[2]) }, 1000 * i);
-                //client.sendMessage(msg.to, Math.floor((Math.random() * 10000) + 1).toString())
-                setTimeout(function () { client.sendMessage(msg.to, makeid(12)) }, 500 * i);
+            if (data[1] == 1) {
+                for (i = 0; i < data[2]; i++) {
+                    setTimeout(function () { client.sendMessage(msg.to, data[3].toString()) }, 100 * i);
+                }
+            } else if (data[1] == 2) {
+                for (i = 0; i < data[2]; i++) {
+                    client.sendMessage(msg.to, Math.floor((Math.random() * data[3]) + 1).toString())
+                }
+            } else if (data[1] == 3) {
+                for (i = 0; i < data[2]; i++) {
+                    setTimeout(function () { client.sendMessage(msg.to, makeid(data[3])) }, 500 * i);
+                }
             }
-            console.log("Spammed" , data[1], "times successfully")
-            client.sendMessage(msg.to, "Spammed " + data[1] + " times successfully")
+            console.log("Spammed" , data[2], "times successfully")
+            client.sendMessage(msg.to, "Spammed " + data[2] + " times successfully")
         } else if (msg.body == '!help') {
-            msg.reply("Spam syntax is   ```!spam <times>```")
+            msg.reply("Spam syntaxes are as follows:\n\n \
+*TYPE1:*  ```!spam 1 <times> <text_to_spam>```\n \
+*TYPE2:*  ```!spam 2 <times> <random_no_digit_length>```\n \
+*TYPE3:*  ```!spam 3 <times> <random_alphanumeric_char_length>```\n")
         }
     }
 });
