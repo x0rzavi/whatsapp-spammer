@@ -37,5 +37,5 @@ Send <code>!help</code> anywhere in your chats to learn the basic spam syntax.
 - This Project is [Apache-2.0](https://github.com/TheWhatsBot/WhatsBot/blob/main/LICENSE) Licensed
 - Copyright 2021 by [Avishek Sen](https://github.com/x0rzavi)
 
-### Connect :
+### Contact :
 - [Telegram](https://telegram.dog/mishizu)
