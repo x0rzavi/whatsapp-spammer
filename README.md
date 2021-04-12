@@ -1,12 +1,16 @@
 <h1 align="center"><tt>WhatsApp Spammer</tt></h1>
 
 ### Disclaimer :
-<p><code>Since this project interacts via WhatsApp Web so there is a bare minimum chance
-of getting banned by WhatsApp. Yet again I hereby declare that I shall NOT be held
-responsible if your account gets banned. After all we are talking about spamming here
-and using automation bots is against WhatsApp's policies. I highly you recommended you 
-NOT to spam numbers which are not in your contact list.
-</code><p>
+```js
+const disclaimer = "Since this project interacts via WhatsApp Web \
+so there is a bare minimum chance of getting banned by WhatsApp. \
+Yet again I hereby declare that I shall NOT be held responsible if \
+your account gets banned. After all we are talking about spamming \
+here and using automation bots is against WhatsApp's policies. I \
+highly you recommended you NOT to spam numbers which are not in \
+your contact list and apply a little amount of brain by not spamming \
+when your friend is pissed already."
+```
 
 ### Requirements :
 - A PC with Nodejs installed.
