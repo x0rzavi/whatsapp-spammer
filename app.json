@@ -1,0 +1,18 @@
+{
+    "name": "whatsapp-spammer",
+    "description": "A very basic inline spammer for WhatsApp",
+    "repository": "https://github.com/x0rzavi/whatsapp-spammer",
+    "logo": "https://avatars.githubusercontent.com/u/57758858?s=400&u=174bd576492b657d8ab546d451b4ca0f971aa010&v=4",
+    "keywords": [
+        "spammer",
+        "spam",
+        "whatsapp"
+    ],
+    "stack": "container",
+    "env": {
+        "SESSION": {
+            "description": "Puppeteer Session Token. Get it by running genToken.js",
+            "value": ""
+        }
+    }
+}
