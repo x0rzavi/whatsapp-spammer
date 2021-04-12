@@ -4,16 +4,26 @@
 [![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg "Deploy with Heroku")](https://heroku.com/deploy?template=https://github.com/x0rzavi/whatsapp-spammer "Deploy with Heroku")<br>
 
 ### Details on Deploying:
-- Signup or login into [Heroku](https://www.heroku.com/ "Heroku")
-- Download the file (or create a file) named ```genToken.js``` on your PC.
+- Signup (its free) or login into [Heroku](https://www.heroku.com/ "Heroku")
+- Download the file (or create a file) named (with the content from) ```genToken.js``` on your PC.
 - Make sure your have [Nodejs](https://nodejs.org/ "Nodejs") downloaded and installed.
 - Open up a terminal and run ```npm i qrcode-terminal whatsapp-web.js``` to install required dependencies.
-- Upon completion run ```node genToken.js``` to generate the session token.
-- Copy the entire string generated and paste it in the ```SESSION``` field in heroku.
+- Upon completion, run ```node genToken.js``` to generate the session token.
+- Copy the entire JSON string generated and paste it in the ```SESSION``` field in heroku.
 - Give your app a name, choose a region and then Deploy.
+- Wait for a few minutes for the process to complete.
+
+### Additional notes and steps:
+- This app will need a cron job to keep it alive, so follow these steps.
+- Signup on ```https://cron-job.org``` (its free).
+- After that click *cronjobs* in the navigation header & click *Create Cronjob*.
+- Give your heroku app url (the url which opens when you click *Open app* in heroku dashboard).
+- Schedule it to every 15 minutes.
+- Everything else will be the default.
+- Click *Create Cronjob* to create a cron job.
 
 ### Commands :
-*Send <code>!help</code> anywhere in your chats to learn the basic syntax.*
+Send <code>!help</code> anywhere in your chats to learn the basic spam syntax.
 
 ### How it works :
 - Opens headless WhatsApp Web session in server using puppeteer.
