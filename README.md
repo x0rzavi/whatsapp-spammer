@@ -1,7 +1,8 @@
-<h1 align="center">WhatsApp Spammer</h1>
+<h1 align="center"><tt>WhatsApp Spammer</tt></h1><br>
+<h3 align="center">A very basic inline spammer for WhatsApp</h3>
 
 ### Deploy :
-[![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg "Deploy with Heroku")](https://heroku.com/deploy?template=https://github.com/TheWhatsBot/WhatsBot "Deploy with Heroku")<br>
+[![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg "Deploy with Heroku")](https://heroku.com/deploy?template=https://github.com/x0rzavi/whatsapp-spammer "Deploy with Heroku")<br>
 
 ### Commands :
 *Send <code>!help</code> anywhere in your chats to learn the basic syntax.*
