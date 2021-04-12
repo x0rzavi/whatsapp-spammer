@@ -1,4 +1,4 @@
-<h1 align="center"><tt>WhatsApp Spammer</tt></h1><br>
+<h1 align="center"><tt>WhatsApp Spammer</tt></h1>
 
 ### Deploy :
 [![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg "Deploy with Heroku")](https://heroku.com/deploy?template=https://github.com/x0rzavi/whatsapp-spammer "Deploy with Heroku")<br>
