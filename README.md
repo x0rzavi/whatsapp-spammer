@@ -1,15 +1,15 @@
 <h1 align="center"><tt>WhatsApp Spammer</tt></h1>
 
-### Requirements:
+### Requirements :
 - A PC with Nodejs installed.
 - An account on Heroku.
 - An account on cron-job.org.
 - A little amount of time and brain.
 
-### Deploy:
+### Deploy :
 [![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg "Deploy with Heroku")](https://heroku.com/deploy?template=https://github.com/x0rzavi/whatsapp-spammer "Deploy with Heroku")<br>
 
-### Details on Deploying:
+### Details on Deploying :
 - Signup (its free) or login into [Heroku](https://www.heroku.com/ "Heroku")
 - Download the file (or create a file) named (with the content from) ```genToken.js``` on your PC.
 - Make sure your have [Nodejs](https://nodejs.org/ "Nodejs") downloaded and installed.
@@ -20,7 +20,7 @@
 - Wait for a few minutes for the process to complete.
 - The spammer is now running and listening for your commands.<br>
 
-### Additional notes and steps:
+### Additional notes and steps :
 - This app will need a cron job to keep it alive, so follow these steps.
 - Signup on [cron-job.org](https://cron-job.org "cron-job.org") (its free).
 - After that click *cronjobs* in the navigation header & click *Create Cronjob*.
