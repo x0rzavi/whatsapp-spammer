@@ -1,6 +1,12 @@
 <h1 align="center"><tt>WhatsApp Spammer</tt></h1>
 
-### Deploy :
+### Requirements:
+- A PC with Nodejs installed.
+- An account on Heroku.
+- An account on cron-job.org.
+- A little amount of time and brain.
+
+### Deploy:
 [![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg "Deploy with Heroku")](https://heroku.com/deploy?template=https://github.com/x0rzavi/whatsapp-spammer "Deploy with Heroku")<br>
 
 ### Details on Deploying:
@@ -12,6 +18,7 @@
 - Copy the entire JSON string generated and paste it in the ```SESSION``` field in heroku.
 - Give your app a name, choose a region and then Deploy.
 - Wait for a few minutes for the process to complete.
+- The spammer is now running and listening for your commands.
 
 ### Additional notes and steps:
 - This app will need a cron job to keep it alive, so follow these steps.
