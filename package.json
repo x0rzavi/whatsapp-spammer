@@ -1,6 +1,6 @@
 {
     "name": "whatsapp-spammer",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "A very basic inline spammer for WhatsApp",
     "main": "main.js",
     "scripts": {
@@ -24,6 +24,6 @@
     "dependencies": {
         "express": "^4.17.1",
         "qrcode-terminal": "^0.12.0",
-        "whatsapp-web.js": "^1.12.0"
+        "whatsapp-web.js": "^1.12.5"
     }
 }
