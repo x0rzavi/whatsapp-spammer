@@ -40,7 +40,7 @@ can request to audit the code anytime by contacting below.</code><br>
 - Signup on [cron-job.org](https://cron-job.org "cron-job.org") (its free).
 - After that click *cronjobs* in the navigation header & click *Create Cronjob*.
 - Give your heroku app url (the url which opens when you click *Open app* in heroku dashboard).
-- Schedule it to every 3 minutes.
+- Schedule it to every 15 minutes.
 - Everything else will be the default.
 - Click *Create Cronjob* to create a cron job.<br>
 
