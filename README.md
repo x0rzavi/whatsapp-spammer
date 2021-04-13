@@ -26,7 +26,7 @@ can request to audit the code anytime by contacting below.</code><br>
 - Download the file (or create a file) named (with the content from) ```genToken.js``` on your PC.
 - Make sure your have [Nodejs](https://nodejs.org/ "Nodejs") downloaded and installed.
 - Open up a terminal and run ```npm i qrcode-terminal whatsapp-web.js``` to install required dependencies.
-- Upon completion, run ```node genToken.js``` to generate the session token.
+- Upon completion, run ```node genToken.js``` in terminal to generate the session token.
 - Copy the entire JSON string generated and paste it in the ```SESSION``` field in heroku.
 - Give your app a name, choose a region and then Deploy.
 - Wait for a few minutes for the process to complete.
