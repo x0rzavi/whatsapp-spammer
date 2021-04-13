@@ -52,9 +52,11 @@ client.on('message_create', async(msg) => {
                 _Spamming *more than 1000* messages at a time isn't allowed to check abuse_ ;)")
             } else {
                 if (data[1] == 1) {
+                    var text_data = data.splice(3)
+                    var text_data = text_data.join(' ')
 		    var start =  Date.now();
                     for (i = 0; i < data[2]; i++) {
-                        await client.sendMessage(msg.to, data[3].toString())
+                        await client.sendMessage(msg.to, text_data.toString())
                         sleep(500)
                     }
 		    var end =  Date.now();
@@ -95,7 +97,8 @@ client.on('message_create', async(msg) => {
             await msg.reply("_Spam syntaxes are as follows:_\n\n \
 _*TYPE1:*_  ```!spam 1 <times> <text_to_spam>```\n \
 _*TYPE2:*_  ```!spam 2 <times> <random_no_digit_length>```\n \
-_*TYPE3:*_  ```!spam 3 <times> <random_alphanumeric_char_length>```\n")
+_*TYPE3:*_  ```!spam 3 <times> <random_alphanumeric_char_length>```\n\n \
+_*WhatsApp Spammer by X0rzAvi*_\n_*v2.0.0*_")
         }
     }
 });
