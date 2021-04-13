@@ -1,5 +1,5 @@
 <h1 align="center"><tt>WhatsApp Spammer</tt></h1><br>
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-green.svg)](https://github.com/x0rzavi)
+<p align="center"><img src="https://img.shields.io/badge/Unmaintained:-Yes-red" /></p>
 
 ### Disclaimer :
 <code>Since this project interacts via WhatsApp Web so there is a bare minimum 
