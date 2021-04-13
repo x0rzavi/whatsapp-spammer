@@ -45,20 +45,20 @@ client.on('message_create', async(msg) => {
         if (msg.body.startsWith("!spam")) {
             var data = msg.body.split(" ")
             msg.delete(true)
-            if (data[1] != 1 || data[1] != 2 || data[1] != 3) {
+            if (data[1] != 1 && data[1] != 2 && data[1] != 3) {
                 await client.sendMessage(msg.to, "_Syntax error detected! Try again._")
             } else if (data[2] > 1000) {
                 await client.sendMessage(msg.to, "_Oops! looks like you are trying to spam a lot!_ \
                 _Spamming *more than 1000* messages at a time isn't allowed to check abuse_ ;)")
             } else {
                 if (data[1] == 1) {
-		    		        var start =  Date.now();
+		    var start =  Date.now();
                     for (i = 0; i < data[2]; i++) {
                         await client.sendMessage(msg.to, data[3].toString())
                         sleep(500)
                     }
-		    		        var end =  Date.now();
-					          var time = (end - start)/1000
+		    var end =  Date.now();
+		    var time = (end - start)/1000
                     console.log("Spammed", data[2], "times successfully")
                     await client.sendMessage(msg.to, "_Spammed *" + data[2] + "* times successfully in *" + secondsToTime(time) + "*_")
                 } else if (data[1] == 2) {
@@ -71,7 +71,7 @@ client.on('message_create', async(msg) => {
                             sleep(500)
                         }
                         var end =  Date.now();
-					              var time = (end - start)/1000
+			var time = (end - start)/1000
                         console.log("Spammed", data[2], "times successfully")
                         await client.sendMessage(msg.to, "_Spammed *" + data[2] + "* times successfully in *" + secondsToTime(time) + "*_")
                     }
@@ -85,7 +85,7 @@ client.on('message_create', async(msg) => {
                             sleep(500)
                         }
                         var end =  Date.now();
-					              var time = (end - start)/1000
+			var time = (end - start)/1000
                         console.log("Spammed", data[2], "times successfully")
                         await client.sendMessage(msg.to, "_Spammed *" + data[2] + "* times successfully in *" + secondsToTime(time) + "*_")
                     }
