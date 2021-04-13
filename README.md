@@ -32,7 +32,7 @@ can request to audit the code anytime by contacting below.</code><br>
 - Wait for a few minutes for the process to complete.
 - The spammer is now running and listening for your commands.
 - NOTE: you will need to restart the bot if you try to open any other WhatsApp Web instance as that results in a ```CONFLICT```.
-- To restart, open your app from heroku dashboard, tap on ```More``` and then ```Restart all dynos```.<br>
+- To restart, open your app from heroku dashboard, tap on _More_ and then _Restart all dynos_.<br>
 
 ### Additional notes and steps :
 - This app will need a cron job to keep it alive, so follow these steps.
