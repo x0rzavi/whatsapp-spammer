@@ -7,9 +7,10 @@ NOT be held responsible if your account gets banned. After all we are talking
 about spamming here and using automation bots is strictly against WhatsApp's policies. 
 So, I highly recommended you NOT to spam numbers which aren't in your contact 
 list and apply a little amount of brain by not spamming when your friend is pissed
-already.</code><br>
-<code>Furthermore, the program has been heavily obfuscated in an effort to prevent
-abuse by altering the limiting internal parameters of the program.</code><br>
+already.</code><br><br>
+<code>Furthermore, the code has been heavily obfuscated in an effort to prevent
+abuse by altering the limiting internal parameters of the program. However, you
+can request to audit the code anytime by contacting below.</code><br>
 
 ### Requirements :
 - A PC with Nodejs installed.
