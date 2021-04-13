@@ -27,7 +27,8 @@ can request to audit the code anytime by contacting below.</code><br>
 - Make sure your have [Nodejs](https://nodejs.org/ "Nodejs") downloaded and installed.
 - Open up a terminal and run ```npm i qrcode-terminal whatsapp-web.js``` to install required dependencies.
 - Upon completion, run ```node full_path_to_genToken.js``` in your terminal to generate the session token.
-- Copy the entire JSON string generated and paste it in the ```SESSION``` field in heroku.
+- Click the above _Deploy with Heroku_ button.
+- Next copy the entire JSON string generated and paste it in the ```SESSION``` field in heroku.
 - Give your app a name, choose a region and then Deploy.
 - Wait for a few minutes for the process to complete.
 - The spammer is now running and listening for your commands.
