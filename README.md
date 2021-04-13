@@ -23,7 +23,7 @@ can request to audit the code anytime by contacting below.</code><br>
 
 ### Details on Deploying :
 - Signup (its free) or login into [Heroku](https://www.heroku.com/ "Heroku")
-- Download the file (or create a file) named (with the content from) ```genToken.js``` on your PC.
+- Download the file (or create a file) named (with the content from) [```genToken.js```](https://github.com/x0rzavi/whatsapp-spammer/blob/453dac2015cdb32ec75b9dea7c5549da314e5c4d/genToken.js "genToken.js") on your PC.
 - Make sure your have [Nodejs](https://nodejs.org/ "Nodejs") downloaded and installed.
 - Open up a terminal and run ```npm i qrcode-terminal whatsapp-web.js``` to install required dependencies.
 - Upon completion, run ```node full_path_to_genToken.js``` in your terminal to generate the session token.
