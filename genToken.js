@@ -6,7 +6,7 @@ const client = new Client({ puppeteer: { headless: true, args: ['--no-sandbox'] 
 client.initialize();
 
 client.on('qr', (qr) => {
-    console.log(`Scan this QR Code and copy the JSON\n`)
+    console.log(`Scan this QR Code from WhatsApp Web menu in your mobile and copy the JSON string.\n`)
     qrcode.generate(qr, { small: true });
 });
 
