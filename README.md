@@ -1,5 +1,5 @@
 <h1 align="center"><tt>WhatsApp Spammer</tt></h1><br>
-<p align="center"><img src="https://img.shields.io/badge/Unmaintained:-Yes-red" /></p>
+<p align="center"><img src="https://img.shields.io/badge/Maintained-No-red" /></p>
 
 ### Disclaimer :
 <code>Since this project interacts via WhatsApp Web so there is a bare minimum 
@@ -51,7 +51,7 @@ Send <code>!help</code> anywhere in your chats to learn the basic spam syntax.<b
 
 ### Credits :
 - [Whatsapp Web JS](https://github.com/pedroslopez/whatsapp-web.js/ "Whatsapp Web JS") - This project is fully dependent on this library
-- [Whatsbot](https://github.com/TheWhatsBot/WhatsBot/ "Whatsbot") - This project has referenced the repo for configuring Heroku and keep alive mechanism.<br>
+- [Whatsbot](https://github.com/TheWhatsBot/WhatsBot/ "Whatsbot") - This project has referenced the repo for configuring Heroku and the keep alive mechanism.<br>
 
 ### License & Copyright :
 - This Project is [Apache-2.0](https://github.com/TheWhatsBot/WhatsBot/blob/main/LICENSE) Licensed
