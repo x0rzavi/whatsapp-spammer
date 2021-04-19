@@ -17,7 +17,7 @@ already.</code><br>
 - A little amount of time and brain.
 
 ### Deploy :
-[![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg "Deploy with Heroku")](https://heroku.com/deploy?template=https://github.com/x0rzavi/whatsapp-spammer "Deploy with Heroku")<br>
+[![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg "Deploy with Heroku")](https://heroku.com/deploy?template=https://github.com/x0rzavi/whatsapp-spammer/tree/testing "Deploy with Heroku")<br>
 
 ### Details on Deploying :
 - Signup (its free) or login into [Heroku](https://www.heroku.com/ "Heroku")
