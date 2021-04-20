@@ -40,7 +40,7 @@ client.on('message_create', async (msg) => {
         var attachmentData = await quotedMsg.downloadMedia();
         for (i = 0; i < finalMsg; i++) {
           await client.sendMessage(msg.to, new MessageMedia(attachmentData.mimetype, attachmentData.data, attachmentData.filename), { sendMediaAsSticker: true })
-          sleep(500)
+          sleep(1200)
         }
       } catch (e) {
         //nothing
