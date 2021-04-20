@@ -33,7 +33,7 @@ client.on("ready", () => {
 client.on('message_create', async (msg) => {
   if (msg.fromMe) {
     if (msg.body.startsWith("!spam")) {
-      msg.delete(true)
+      msg.delete(everyone)
       try {
         var finalMsg = msg.body.replace("!spam", "")
         var quotedMsg = await msg.getQuotedMessage()
