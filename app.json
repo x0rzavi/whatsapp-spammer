@@ -13,6 +13,10 @@
         "SESSION": {
             "description": "Puppeteer Session Token. Get it by running genToken.js",
             "value": ""
+        },
+        "CONTACT": {
+            "description": "Contact to send revoked messages to. Must be in this format 'xxyyyyyyyyyy@c.us' (xx: country code)",
+            "value": "911234567890@c.us"
         }
     }
 }
