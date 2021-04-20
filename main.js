@@ -15,6 +15,7 @@ const app = express();
 const client = new Client({
   puppeteer: { headless: true, args: ["--no-sandbox"] },
   session: config.session,
+  ffmpegPath: '/usr/bin/ffmpeg'
 });
 
 client.initialize();
