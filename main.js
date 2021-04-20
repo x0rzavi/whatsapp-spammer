@@ -13,7 +13,7 @@ function sleep(milliseconds) {
 
 const app = express();
 const client = new Client({
-  puppeteer: { executablePath: '/usr/bin/google-chrome-stable' },
+  puppeteer: { executablePath: '/usr/bin/google-chrome' },
   session: config.session,
   ffmpegPath: '/usr/bin/ffmpeg'
 });
