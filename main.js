@@ -78,7 +78,7 @@ client.on("message_create", async (msg) => {
             var start = Date.now();
             for (i = 0; i < data[2]; i++) {
               await client.sendMessage(msg.to, text_data.toString());
-              sleep(500);
+              sleep(1200);
             }
             var end = Date.now();
             var time = (end - start) / 1000;
@@ -104,7 +104,7 @@ client.on("message_create", async (msg) => {
                   msg.to,
                   Math.floor(Math.random() * data[3] + 1).toString()
                 );
-                sleep(500);
+                sleep(1200);
               }
               var end = Date.now();
               var time = (end - start) / 1000;
@@ -128,7 +128,7 @@ client.on("message_create", async (msg) => {
               var start = Date.now();
               for (i = 0; i < data[2]; i++) {
                 await client.sendMessage(msg.to, makeid(data[3]));
-                sleep(500);
+                sleep(1200);
               }
               var end = Date.now();
               var time = (end - start) / 1000;
