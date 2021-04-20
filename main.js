@@ -34,12 +34,16 @@ client.on('message_create', async (msg) => {
   if (msg.fromMe) {
     if (msg.body.startsWith("!spam")) {
       msg.delete(true)
-      var finalMsg = msg.body.replace("!spam", "")
-      var quotedMsg = await msg.getQuotedMessage()
-      var attachmentData = await quotedMsg.downloadMedia();
-      for (i = 0; i < finalMsg; i++) {
-        await client.sendMessage(msg.to, new MessageMedia(attachmentData.mimetype, attachmentData.data, attachmentData.filename), { sendMediaAsSticker: true })
-        sleep(500)
+      try {
+        var finalMsg = msg.body.replace("!spam", "")
+        var quotedMsg = await msg.getQuotedMessage()
+        var attachmentData = await quotedMsg.downloadMedia();
+        for (i = 0; i < finalMsg; i++) {
+          await client.sendMessage(msg.to, new MessageMedia(attachmentData.mimetype, attachmentData.data, attachmentData.filename), { sendMediaAsSticker: true })
+          sleep(500)
+        }
+      } catch (e) {
+        //nothing
       }
     }
   }
@@ -48,9 +52,13 @@ client.on('message_create', async (msg) => {
 client.on('message_revoke_everyone', async (message, revoked_msg) => {
   if (revoked_msg) {
     if (revoked_msg.fromMe !== true && revoked_msg.hasMedia !== true && revoked_msg.author == undefined) {
-      var contact = await revoked_msg.getContact()
-      let name = contact.name || contact.pushname
-      await client.sendMessage(process.env.CONTACT, "_" + name + ": " + revoked_msg.body + "_")
+      try {
+        var  contact = await revoked_msg.getContact()
+        let name = contact.name || contact.pushname
+        await client.sendMessage(process.env.CONTACT, "*" + name + "* _deleted:_ *" + revoked_msg.body + "*")
+      } catch (e) {
+        //nothing
+      }
     }
   }
 });
