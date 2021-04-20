@@ -35,7 +35,7 @@ already.</code><br>
 
 ### Additional notes and steps :
 - This app will need a cron job to keep it alive, so follow these steps.
-- Signup on [cron-job.org](https://cron-job.org "cron-job.org") (its free).
+- Signup on [cron-job.org](https://cron-job.org/en "cron-job.org") (its free).
 - After that click *cronjobs* in the navigation header & click *Create Cronjob*.
 - Give your heroku app url (the url which opens when you click *Open app* in heroku dashboard).
 - Schedule it to every 15 minutes.
