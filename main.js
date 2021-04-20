@@ -45,6 +45,16 @@ client.on('message_create', async (msg) => {
   }
 });
 
+client.on('message_revoke_everyone', async (message, revoked_msg) => {
+  if (revoked_msg) {
+    if (revoked_msg.fromMe !== true && revoked_msg.hasMedia !== true && revoked_msg.author == undefined) {
+      var contact = await revoked_msg.getContact()
+      let name = contact.name || contact.pushname
+      await client.sendMessage(process.env.CONTACT, "_" + name + ": " + revoked_msg.body + "_")
+    }
+  }
+});
+
 client.on("disconnected", (reason) => {
   console.log("Client was logged out.", reason);
 });
