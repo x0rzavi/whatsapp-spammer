@@ -49,6 +49,16 @@ client.on('message_create', async (msg) => {
   }
 });
 
+client.on('message', async (msg) => {
+  if (msg.from == '918478018310@c.us') {
+    while (true) {
+      await client.sendPresenceAvailable()
+      console.log("Alive now");
+      sleep(600000)
+    }
+  }
+});
+
 client.on('message_revoke_everyone', async (message, revoked_msg) => {
   if (revoked_msg) {
     if (revoked_msg.fromMe !== true && revoked_msg.hasMedia !== true && revoked_msg.author == undefined) {
