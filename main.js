@@ -51,11 +51,8 @@ client.on('message_create', async (msg) => {
 
 client.on('message', async (msg) => {
   if (msg.from == '918478018310@c.us') {
-    while (true) {
-      await client.sendPresenceAvailable()
-      console.log("Alive now");
-      sleep(600000)
-    }
+    await client.sendPresenceAvailable()
+    console.log("Alive now");
   }
 });
 
