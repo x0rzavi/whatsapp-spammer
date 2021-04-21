@@ -43,7 +43,7 @@ already.</code><br>
 - Click *Create Cronjob* to create a cron job.<br>
 
 ### Commands :
-Send <code>!help</code> anywhere in your chats to learn the basic spam syntax.<br>
+Contact below to know basic syntax for <code>testing</code> branch<br>
 
 ### How it works :
 - Opens headless WhatsApp Web session in server using puppeteer.
